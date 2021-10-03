@@ -21,7 +21,7 @@ compressedRatio = (1-len(resultArray) / len(pointList)) * 100
 print("The Compressed ratio is: %.3f%%" % compressedRatio)
 
 # draw raw data, draw resultArray
-fig, ax = plt.subplots(figsize=(14, 8), dpi=300)
+fig, ax = plt.subplots(figsize=(14, 8))
 ax.scatter(df.x, df.y, marker="o", edgecolor="black", facecolor="white", s=80, label="raw data scatter")
 ax.plot(df.x, df.y, color="green", label="raw data curve")
 ax.set_xlabel("x", fontsize=16)
